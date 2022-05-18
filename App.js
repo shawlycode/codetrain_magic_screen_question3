@@ -21,7 +21,13 @@ export default function App() {
               blurRadius={15}
               style={styles.profileBg}
             />
-            <View style={{ position: "absolute", top: 40, left: 80 }}>
+            <View
+              style={{
+                position: "absolute",
+                top: 40,
+                left: 80,
+              }}
+            >
               <View style={styles.profileContainer}>
                 <Image
                   source={require("./assets/joo.jpg")}
@@ -106,10 +112,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   profileImg: {
+    justifyContent: "center",
+    alignItems: "center",
     width: 200,
     height: 200,
     borderRadius: 100,
-    resizeMode: "cover",
+    resizeMode: "fit",
   },
   textContainer: {
     justifyContent: "center",
